@@ -13,8 +13,8 @@
 // }
 
 // *********     task 3 of generic    *********
-import { merge } from "./generic/3";
+// import { merge } from "./generic/3";
 
-const merged = merge({ name: "Alisa" }, { age: 28 });
-merged.name;
-console.log(merged.name);
+// const merged = merge({ name: "Alisa" }, { age: 28 });
+// merged.name;
+// console.log(merged.name);

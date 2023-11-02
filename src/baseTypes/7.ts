@@ -4,24 +4,29 @@
 */
 
 enum Week {
-  sun = "true",
-  mon = "false",
-  tu = "false",
-  wed = "false",
-  thu = "false",
-  fr = "false",
-  sa = "true",
+  sun,
+  mon,
+  tu,
+  wed,
+  thu,
+  fr,
+  sa,
 }
 
-function isWeekend(day: Week) {
-  if (day === "true") {
-    return true;
-  } else {
-    return false;
-  }
+function isWeekend(day: Week): boolean {
+  const weekEnd = Week.sun || Week.sa;
+  return day === weekEnd;
 }
 
 export { isWeekend, Week };
+
+// function isWeekend(day: Week) {
+//   if (day === "true") {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
 
 // import { isWeekend, Week } from "./baseTypes/7";
 // const button = document.querySelector("button")!;
